@@ -16,9 +16,9 @@ Otherwise, the strings are anagrams.
 
 # Complexity
 
-- Time complexity: $$O(n)$$
+- Time complexity: $O(n)$
 
-- Space complexity: $$O(1)$$
+- Space complexity: $O(1)$
 
 # Code
 

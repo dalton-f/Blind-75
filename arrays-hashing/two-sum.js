@@ -5,17 +5,15 @@
  */
 
 const twoSum = (nums, target) => {
-  const numberIndexes = {};
+  const numberIndexes = new Map();
 
   for (let i = 0; i < nums.length; i++) {
     const currNum = nums[i];
     const complement = target - currNum;
 
-    if (numberIndexes[complement] !== undefined)
-      return [numberIndexes[complement], i];
+    if (numberIndexes.has(complement))
+      return [numberIndexes.get(complement), i];
 
-    numberIndexes[currNum] = i;
+    numberIndexes.set(currNum, i);
   }
-
-  console.log(numberIndexes);
 };
